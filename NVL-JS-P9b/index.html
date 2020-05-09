@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NVL-JS-P9b</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var dias_semana = "Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo";
+		var ciudades = "Madrid.Sevilla.Barcelona.Valencia.Zaragoza.Bilbao.Donosti";
+		dias_semana = dias_semana.split(",");
+		ciudades = ciudades.split(".");
+		var union = [];
+		for (var i = dias_semana.length - 1; i >= 0; i--) {
+			union.push(dias_semana[i].toString());
+			union.push(ciudades[i].toString());
+		}
+	</script>
+</body>
+</html>
