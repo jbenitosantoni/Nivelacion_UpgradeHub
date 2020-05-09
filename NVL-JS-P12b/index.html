@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NVL-JS-P12B</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var numeros = [];
+		var pares = [];
+		var impares = [];
+		function generador_numeros() {
+			for (var i = 50 - 1; i >= 0; i--) {
+				numeros.push(Math.floor((Math.random() * 100) + 1));
+			}
+		}
+		function pares_impares(numeros) {
+			for (var i = numeros.length - 1; i >= 0; i--) {
+				if (numeros[i] % 2 == 0) {
+					pares.push(numeros[i]);
+				} else {
+					impares.push(numeros[i]);
+				}
+			}
+			return [pares,impares];
+		}
+		generador_numeros();
+		pares_impares(numeros);
+	</script>
+</body>
+</html>
